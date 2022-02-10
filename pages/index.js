@@ -22,12 +22,12 @@ export default function Home() {
   )
 }
 
-export async function getServerSideProps(context) {
-  const session = await getSession(context)
+// export async function getStaticProps(context) {
+//   const session = await getSession(context)
 
-  return {
-    props: {
-      session,
-    },
-  }
-}
+//   return {
+//     props: {
+//       session,
+//     },
+//   }
+// }
