@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 
 
 export async function middleware(req) {
-  const token = await getToken({ req, secret: process.env.JWT_SECRET })
+  const token = await getToken({ req, secret: 'VALUEUBHBHBH' })
   const { pathname } = req.nextUrl
   if (pathname.includes('/api/auth') || token) {
     return NextResponse.next()

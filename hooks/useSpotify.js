@@ -5,8 +5,8 @@ import { useSession, signIn } from 'next-auth/react'
 
 import SpotifyWebApi from 'spotify-web-api-node'
 const spotifyApi = new SpotifyWebApi({
-  clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
-  clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
+  clientId: '6cdf434e694c4cd79ff15834b40f80c0',
+  clientSecret: '9c98fcd196594bc78dacb6030524694c',
 })
 function UseSpotify() {
   const { data: session } = useSession()
